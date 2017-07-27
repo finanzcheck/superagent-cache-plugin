@@ -1,7 +1,7 @@
 {
-  "name": "superagent-cache-plugin",
+  "name": "@finanzcheck/superagent-cache-plugin",
   "version": "2.0.0",
-  "description": "Superagent with flexible built-in caching.",
+  "description": "FFG Superagent plugin with flexible built-in caching.",
   "main": "index.js",
   "devDependencies": {
     "superagent": "3.x",
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jpodwys/superagent-cache-plugin.git"
+    "url": "git+https://github.com/finanzcheck/superagent-cache-plugin.git"
   },
   "author": "jpodwys",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jpodwys/superagent-cache-plugin/issues"
+    "url": "https://github.com/finanzcheck/superagent-cache-plugin/issues"
   },
-  "homepage": "https://github.com/jpodwys/superagent-cache-plugin#readme",
+  "homepage": "https://github.com/finanzcheck/superagent-cache-plugin#readme",
   "directories": {
     "test": "test"
   },
