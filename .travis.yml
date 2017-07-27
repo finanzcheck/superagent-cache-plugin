@@ -1,0 +1,22 @@
+# whitelist
+branches:
+  only:
+    - master
+
+language: node_js
+node_js:
+- "6.9"
+
+before_install:
+  - echo -e "@finanzcheck:registry=http://npm.finanzcheck.de:8080/\n//npm.finanzcheck.de:8080/:_authToken=$NPM_FINANZCHECK_TOKEN" >> ~/.npmrc
+  - export TAG=`if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo "PR-$TRAVIS_PULL_REQUEST"; fi`
+  - export VERSION=`cat package.json | jq -r '.version'`
+  - export VERSION=${VERSION%.*}".$TRAVIS_BUILD_NUMBER"
+  - export VERSION=`if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $VERSION; else echo "$VERSION-PR-$TRAVIS_PULL_REQUEST"; fi`
+
+script:
+  - make test
+
+#notifications:
+#  slack:
+#    secure: <ADD YOUR TOKEN HERE>
