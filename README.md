@@ -380,6 +380,14 @@ However, you can only get it when you pass 3 params to the callback's argument l
 
 # Breaking Change History
 
+#### 2.2.0
+
+* `bypassHeaders` support. 
+
+#### 2.1.0
+
+* `Cache-Control` headers support.
+
 #### 2.0.0
 
 * Now compatible with superagent `2.x` and `3.x`
