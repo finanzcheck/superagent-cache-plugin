@@ -380,6 +380,11 @@ However, you can only get it when you pass 3 params to the callback's argument l
 
 # Breaking Change History
 
+#### 2.2.1
+
+* [[CORE-450](https://jira.finanzcheck.de/browse/CORE-450)] Fix `only-if-cached` response behavior according to RFC-7234 (return 504 on cache miss).
+* Optimize 304 response behaviour by cloning response data to prevent internal side effects when changing the response data.
+
 #### 2.2.0
 
 * `bypassHeaders` support. 
