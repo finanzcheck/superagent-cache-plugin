@@ -1,0 +1,22 @@
+type: library
+owners:
+  - team.prism@finanzcheck.de
+product: hapi-plugins
+id: finanzcheck-superagent-cache-plugin
+vertical: finanzcheck
+availability: false
+confidentiality: company-internal
+integrity: false
+authenticity: false
+exposure:
+  - non-applicable
+lifecycle: maintenance
+name: Superagent cache plugin
+description: A caching plugin for Superagent. Only used by node-hapi-plugin-api-client.
+links:
+  - type: repository
+    title: GitHub repository
+    address: https://github.com/finanzcheck/superagent-cache-plugin
+tags:
+  - hapi
+license: Proprietary
